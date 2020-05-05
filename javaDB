@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS papersDB;
+
+CREATE DATABASE papersDB;
+
+USE papersDB;
+
+CREATE TABLE examPaper
+(
+   ID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   module varchar(30) NOT NULL,
+   year int(4) NOT NULL,
+   category varchar(30) NOT NULL
+);
+
+INSERT INTO examPaper(module, year, category) VALUES("soft dev 3", 2019, "computing");
+INSERT INTO examPaper(module, year, category) VALUES("fop 1", 2019, "computing");
+INSERT INTO examPaper(module, year, category) VALUES("challenging behaviour", 2019, "humanities");
